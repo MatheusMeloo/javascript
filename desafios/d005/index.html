@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+</head>
+<body>
+    <h1>Conversor de medidas</h1>
+    <button onclick="inicio()">Converter</button>
+    <section id="resultado">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    <script>
+        function inicio(){
+            let dis = window.prompt('Digite a distância em metros(m)')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p> <strong> A distância de ${dis} metros, corresponde a...</strong> ${(dis)+(100)} quilômetros(Km)`
+        }
+    </script>
+    
+
+</body>
+</html>
