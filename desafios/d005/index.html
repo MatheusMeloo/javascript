@@ -5,18 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de medidas</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-decoration: underline;
+        }
+        button{
+            font-size: 12pt;
+            width: 150px;
+            padding: 15px;
+            font-weight: bolder;
+            box-shadow: 2px 2px 1px  black;
+        }   
+        script{
+            
+        }
+    </style>
 </head>
 <body>
     <h1>Conversor de medidas</h1>
     <button onclick="inicio()">Converter</button>
     <section id="resultado">
-        <p>Clique no botão acima para iniciar.</p>
+        <p>Clique no botão acima para iniciar...</p>
     </section>
     <script>
         function inicio(){
             let dis = window.prompt('Digite a distância em metros(m)')
             let res = window.document.getElementById('resultado')
-            res.innerHTML = `<p> <strong> A distância de ${dis} metros, corresponde a...</strong> ${(dis)+(100)} quilômetros(Km)`
+            res.innerHTML = `<p> <strong> A distância de ${dis} metros, corresponde a...</strong> <br><br> ${(dis) / 1000} quilômetros (Km) <br><br> ${(dis) * 100} centímetros (cm) <br><br> ${(dis) * 1000} milímetros (mm)`
         }
     </script>
     
