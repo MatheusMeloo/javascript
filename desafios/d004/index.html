@@ -6,18 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo de troco</title>
     <style>
+
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url('imagens/troco.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
         }
+
+        h1{
+
+            font-size: 24pt;
+            color: white;
+            text-decoration: underline;
+        }
+
         button{
-            font-size: 12pt;
+            background-color: lightgray;
+            font-size: 15pt;
+            font-weight: bolder;
             width: 300px;
             padding: 30px;
+            border-radius: 10px 10px;
+            box-shadow: 2px 2px 1px black;
         }
+        
     </style>
 </head>
 <body>
-    <h1>Calcular troco</h1>
+    
+    <h1>CALCULAR TROCO</h1>
 
     <button onclick="inicio()">Comprar produto</button>
 
@@ -27,7 +47,7 @@
             let produto = window.prompt('Qual produto deseja comprar?')
             let valor = window.prompt('Qual valor do produto?')
             let din = window.prompt('Qual valor que você deu para pagar?')
-            window.alert(`Você comrpou ${produto} que custou R$${valor},00. Deu em dinheiro R$${din},00 em dinheiro e vai receber R$${din - valor},00 de troco. Volte Sempre!`)
+            window.alert(`Você comrpou ${produto} que custou R$${valor},00. ,Deu em dinheiro R$${din},00 em dinheiro e vai receber R$${din - valor},00 de troco. Volte Sempre!`)
         }
 
     </script>

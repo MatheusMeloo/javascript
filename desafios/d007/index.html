@@ -4,39 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor R$ -> US$</title>
+    <title>Conversor R$ - US$</title>
+
     <style>
+        
         body{
-            background-color: lightgreen;
+            background-image: url('imagens/dolars.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         button{
             font-size: 15pt;
             font-weight: bolder;
-            width: 300px;
-            padding: 30px;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px 10px;
+
             box-shadow: 2px 2px 2px 1px black;
         }
+
         p{
-            font-size: 15pt;
+            font-size: 12pt;
             text-decoration: underline;
+            font-weight: bold;
         }
 
     </style>
 </head>
 <body>
-    <h1>Conversor R$ -> US$</h1>
+    <h1>Conversor R$ - US$</h1>
+
     <button onclick="inicio()">Converter</button>
+
     <section id="resultado">
+
         <p>Clique no botão acima para iniciar</p>
+
     </section>
+
     <script>
+
         function inicio(){
+
             let dol = window.prompt('Valor do Dolar?')
             let rea = window.prompt('Valor do real para converter')
             let res = window.document.getElementById('resultado')
             res.innerHTML = `<p> Você poderá comprar apenas <strong>US$${Math.floor((rea) / dol)},00</strong>`
         }
+
     </script>
 </body>
 </html>
