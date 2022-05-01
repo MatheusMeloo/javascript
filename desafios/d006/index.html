@@ -50,7 +50,7 @@
 
             let temp = window.prompt('Digite a temperatura em °C :')
             let res = window.document.getElementById('resultado')
-            res.innerHTML = `<p> <strong> A temperatura de ${temp} °C, corresponde a...</strong> <br> <br> ${(temp) + (273)}°K (Kelvin) <br> <br> ${((temp)* 9/5) + 32}°F (Fahrenheit)`
+            res.innerHTML = `<p> <strong> A temperatura de ${temp} °C, corresponde a...</strong> <br> <br> ${parseInt(temp) + parseFloat(273.15)}°K (Kelvin) <br> <br> ${((temp)* 9/5) + 32}°F (Fahrenheit)`
         }
         
     </script>

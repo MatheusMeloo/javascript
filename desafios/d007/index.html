@@ -51,9 +51,9 @@
         function inicio(){
 
             let dol = window.prompt('Valor do Dolar?')
-            let rea = window.prompt('Valor do real para converter')
+            let real = window.prompt('Valor do real para converter')
             let res = window.document.getElementById('resultado')
-            res.innerHTML = `<p> Você poderá comprar apenas <strong>US$${Math.floor((rea) / dol)},00</strong>`
+            res.innerHTML = `<p> Você poderá comprar apenas <strong>US$${(real / dol)},00</strong>`
         }
 
     </script>
